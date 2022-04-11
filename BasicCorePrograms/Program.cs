@@ -8,10 +8,9 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5.HarmonicSeries\n");
             while (end)
             {
-
                 Console.WriteLine("Enter an option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -33,6 +32,10 @@ namespace BasicCorePrograms
                         prime.Prime();
                         break;
                     case 5:
+                        HarmonicNumber Hnum = new HarmonicNumber();
+                        Hnum.harmonicSeries();
+                        break;
+                    case 6:
                         end= false;
                         break;
                     default:
