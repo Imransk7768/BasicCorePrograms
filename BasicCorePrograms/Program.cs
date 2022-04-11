@@ -8,7 +8,8 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5. HarmonicSeries\n6. Quotient&Remainder\n");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5. HarmonicSeries\n6. Quotient&Remainder\n" +
+                "7. SwapTwoNumbers");
             while (end)
             {
                 Console.WriteLine("Enter an option to execute");
@@ -40,7 +41,11 @@ namespace BasicCorePrograms
                         qr.CalQuotientRemainder();
                         break;
                     case 7:
-                        end= false;
+                        SwapTwoNumbers swap = new SwapTwoNumbers();
+                        swap.DoSwapTwoNumbers();
+                        break;
+                    case 8:
+                        end = false;
                         break;
                     default:
                         Console.WriteLine("Please Enter a Valid Option To Execute");
