@@ -7,13 +7,14 @@ namespace BasicCorePrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Programs");
-            bool end = true;
+            bool end = true;int num;
             Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5. HarmonicSeries\n6. Quotient&Remainder\n" +
-                "7. SwapTwoNumbers\n8. Even or Odd\n9. Vowel & Consonant\n");
+                "7. SwapTwoNumbers\n8. Even or Odd\n9. Vowel & Consonant\n10. Largest Among Three\n");
             while (end)
             {
                 Console.WriteLine("Enter an option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
+                int i;
                 switch (option)
                 {
                     case 1:
@@ -53,10 +54,12 @@ namespace BasicCorePrograms
                         alpha.Alphabet();
                         break;
                     case 10:
-                        end = false;
+                        LargestNumber largest= new LargestNumber();
+                        largest.FindLargestNum();
                         break;
                     default:
                         Console.WriteLine("Please Enter a Valid Option To Execute");
+                        end = false;
                         break;
                 }
             }
