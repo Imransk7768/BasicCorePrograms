@@ -1,11 +1,30 @@
 ﻿using System;
+
 namespace BasicCorePrograms
 {
     public class Program
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Basic Core Programs.");
+            Console.WriteLine("Welcome to Basic Programs");
+            bool end = true;
+            Console.WriteLine("1. FlipCoin\n");
+            while (end)
+            {
+
+                Console.WriteLine("Enter an option to execute");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        FLipCoin flipCoin = new FLipCoin();
+                        flipCoin.Flip();
+                        break;
+                    default:
+                        Console.WriteLine("Please Enter a Valid Option To Execute");
+                        break;
+                }
+            }
         }
     }
 }
