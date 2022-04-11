@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n");
             while (end)
             {
 
@@ -27,6 +27,13 @@ namespace BasicCorePrograms
                     case 3:
                         PowerOfTwo power = new PowerOfTwo();
                         power.TwoPower();
+                        break;
+                    case 4:
+                         PrimeFactor prime = new PrimeFactor();
+                        prime.Prime();
+                        break;
+                    case 5:
+                        end= false;
                         break;
                     default:
                         Console.WriteLine("Please Enter a Valid Option To Execute");
