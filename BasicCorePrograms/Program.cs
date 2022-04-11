@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear\n");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n");
             while (end)
             {
 
@@ -23,6 +23,10 @@ namespace BasicCorePrograms
                     case 2:
                         LeapYear year = new LeapYear();
                         year.CheckLeapYear();
+                        break;
+                    case 3:
+                        PowerOfTwo power = new PowerOfTwo();
+                        power.TwoPower();
                         break;
                     default:
                         Console.WriteLine("Please Enter a Valid Option To Execute");
