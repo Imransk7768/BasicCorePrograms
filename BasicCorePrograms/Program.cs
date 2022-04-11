@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
             Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5. HarmonicSeries\n6. Quotient&Remainder\n" +
-                "7. SwapTwoNumbers");
+                "7. SwapTwoNumbers\n8. Even or Odd\n");
             while (end)
             {
                 Console.WriteLine("Enter an option to execute");
@@ -45,6 +45,10 @@ namespace BasicCorePrograms
                         swap.DoSwapTwoNumbers();
                         break;
                     case 8:
+                        EvenOdd Ev = new EvenOdd();
+                        Ev.OddEven();
+                        break;
+                    case 9:
                         end = false;
                         break;
                     default:
