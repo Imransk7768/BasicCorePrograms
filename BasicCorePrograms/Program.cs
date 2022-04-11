@@ -9,7 +9,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
             Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5. HarmonicSeries\n6. Quotient&Remainder\n" +
-                "7. SwapTwoNumbers\n8. Even or Odd\n");
+                "7. SwapTwoNumbers\n8. Even or Odd\n9. Vowel & Consonant\n");
             while (end)
             {
                 Console.WriteLine("Enter an option to execute");
@@ -49,6 +49,10 @@ namespace BasicCorePrograms
                         Ev.OddEven();
                         break;
                     case 9:
+                        VowelConsonant alpha = new VowelConsonant();
+                        alpha.Alphabet();
+                        break;
+                    case 10:
                         end = false;
                         break;
                     default:
