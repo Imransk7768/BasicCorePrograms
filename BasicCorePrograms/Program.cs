@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             Console.WriteLine("Welcome to Basic Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5.HarmonicSeries\n");
+            Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. PrimeFactor\n5. HarmonicSeries\n6. Quotient&Remainder\n");
             while (end)
             {
                 Console.WriteLine("Enter an option to execute");
@@ -36,6 +36,10 @@ namespace BasicCorePrograms
                         Hnum.harmonicSeries();
                         break;
                     case 6:
+                        QuotientRemainder qr = new QuotientRemainder();
+                        qr.CalQuotientRemainder();
+                        break;
+                    case 7:
                         end= false;
                         break;
                     default:
